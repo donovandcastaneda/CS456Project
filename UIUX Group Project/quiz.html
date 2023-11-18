@@ -17,21 +17,194 @@
     </nav>
     <div class="container">
         <h1> Welcomes to our colorblindness quiz!</h1>
-        <p> take out quiz to find our if you are colorblind or not!</p>
-        <form>
+        <div id="description">
+            <p> For each image, pick the number that you see.</p>
+
+        </div>
+        <form id="quiz-form">
+            <div class="question">
+                <h2>Question 1:</h2>
+
+                <img src="imgs/Plate1.gif"/>
+
+            <div class="options">
             
+                <input type="radio" id="" name="question1" value="0">
+                <label for=" ">24</label><br>
 
+                <input type="radio" id="q1a2" name="question1" value="1">
+                <label for="q1a2">12</label><br>
+            </div>
+            </div>
 
+            <div class="question">
+                <h2>Question 2:   </h2>
+                <img src="imgs/Plate2.gif"/>
 
+                <div class="options">
+            
+                    <input type="radio" id="" name="question2" value="0">
+                    <label for=" ">3</label><br>
+    
+                    <input type="radio" id="q1a2" name="question2" value="1">
+                    <label for="q1a2">8</label><br>
+                </div>
+            </div>
+            <div class="question">
+                <h2>Question 3:   </h2>
+                <img src="imgs/Plate3.gif"/>
 
+                <div class="options">
+            
+                    <input type="radio" id="" name="question3" value="1">
+                    <label for=" ">29</label><br>
+    
+                    <input type="radio" id="q1a2" name="question3" value="0">
+                    <label for="q1a2">70</label><br>
+
+                   
+                </div>
+            </div>
+            <div class="question">
+                <h2>Question 4:   </h2>
+                <img src="imgs/Plate4.gif"/>
+
+           
+                <div class="options">
+            
+                    <input type="radio" id="" name="question4" value="0">
+                    <label for=" ">2</label><br>
+    
+                    <input type="radio" id="q1a2" name="question4" value="1">
+                    <label for="q1a2">5</label><br>
+                </div>
+            </div>
+            <div class="question">
+                <h2>Question 5:   </h2>
+                <img src="imgs/Plate5.gif"/>
+
+           
+                <div class="options">
+            
+                    <input type="radio" id="" name="question5" value="0">
+                    <label for=" ">5</label><br>
+    
+                    <input type="radio" id="q1a2" name="question5" value="1">
+                    <label for="q1a2">3</label><br>
+                </div>
+            </div>
+            <div class="question">
+                <h2>Question 6:   </h2>
+                <img src="imgs/Plate6.gif"/>
+
+           
+                <div class="options">
+            
+                    <input type="radio" id="" name="question6" value="1">
+                    <label for=" ">15</label><br>
+    
+                    <input type="radio" id="q1a2" name="question6" value="0">
+                    <label for="q1a2">17</label><br>
+                </div>
+            </div>
+            <div class="question">
+                <h2>Question 7:   </h2>
+                <img src="imgs/Plate7.gif"/>
+
+                <div class="options">
+            
+                    <input type="radio" id="" name="question7" value="0">
+                    <label for=" ">21</label><br>
+    
+                    <input type="radio" id="q1a2" name="question7" value="1">
+                    <label for="q1a2">74</label><br>
+                </div>
+            </div>
+            <div class="question">
+                <h2>Question 8:   </h2>
+                <img src="imgs/Plate8.gif"/>
+
+           
+                <div class="options">
+            
+                    <input type="radio" id="" name="question8" value="0">
+                    <label for=" ">Nothing</label><br>
+    
+                    <input type="radio" id="q1a2" name="question8" value="1">
+                    <label for="q1a2">6</label><br>
+                </div>
+            </div>
+            <div class="question">
+                <h2>Question 9:   </h2>
+                <img src="imgs/Plate9.gif"/>
+
+                <div class="options">
+            
+                    <input type="radio" id="" name="question9" value="1">
+                    <label for=" ">45</label><br>
+    
+                    <input type="radio" id="q1a2" name="question9" value="1">
+                    <label for="q1a2">Nothing</label><br>
+                </div>
+            </div>
+            <div class="question">
+                <h2>Question 10:   </h2>
+                <img src="imgs/Plate10.gif"/>
+
+           
+                <div class="options">
+            
+                    <input type="radio" id="" name="question10" value="1">
+                    <label for=" ">5</label><br>
+    
+                    <input type="radio" id="q1a2" name="question10" value="0">
+                    <label for="q1a2">Nothing</label><br>
+                </div>
+            </div>
+            <div class="question">
+                <h2>Question 11:   </h2>
+                <img src="imgs/Plate11.gif"/>
+
+                <div class="options">
+            
+                    <input type="radio" id="" name="question11" value="0">
+                    <label for=" ">Nothing</label><br>
+    
+                    <input type="radio" id="q1a2" name="question11" value="1">
+                    <label for="q1a2">7</label><br>
+                </div>
+            </div>
+            <div class="question">
+                <h2>Question 12: </h2>
+                <img src="imgs/Plate12.gif"/>
+
+                <div class="options">
+            
+                    <input type="radio" id="" name="question12" value="1">
+                    <label for=" ">16</label><br>
+    
+                    <input type="radio" id="q1a2" name="question12" value="0">
+                    <label for="q1a2">Nothing</label><br>
+                </div>
+            </div>
+            <button type="button" onclick="calculateScore()">Submit</button>
 
         </form>
-    
 
+        <div id="result-container">
+
+            <div id="result">
+            </div>
+            <div id="desc">
+            </div>
+        </div>
+       
         
 
+
     </div>
     </div>
-    
+        <script src="quiz.js"></script>
+
 </body>
 </html>
