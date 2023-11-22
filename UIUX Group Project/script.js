@@ -1,3 +1,6 @@
+
+
+
 // Get references to the tab links and tab content
 const tabLinks = document.querySelectorAll("nav ul li a");
 const tabContents = document.querySelectorAll("#tab-content > div");
@@ -37,3 +40,15 @@ tabLinks.forEach(tabLink => {
 // Initially show the content for the first tab (Tab 1)
 hideTabContents();
 showTabContent("tab1");
+
+
+$(document).ready(function(){
+
+    //Adding animation for tab selection    
+    $(".page-nav .list-group-item").click(function(e) {
+        $(".page-nav .list-group-item").removeClass("active");
+        $(e.target).addClass("active");
+     });
+    
+ });
+

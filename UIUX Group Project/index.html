@@ -1,93 +1,231 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Color blindness</title>
-        <link rel="stylesheet"  href="styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 
+<head>
+    <title>Color blindness</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    </head>
+    <!-- adding boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <nav id="navbar">
-            <a href="index.html">Home</a>
-            <a href="information.html">Information</a>
-            <a href="quiz.html">Quiz</a>
-            <a href="visuals.html">Visuals</a>
-    </nav>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
 
-    <body>    
-    
-        
+<nav id="navbar">
+    <a href="index.html">Home</a>
+    <a href="information.html">Information</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="visuals.html">Visuals</a>
+</nav>
+
+<body>
+    <div class="container-fluid">
         <header>
-            <h1>Welcome to Colorblindness Informational Website</h1>
-            <!-- Navigation for tabs -->
-            <nav>
-                <ul>
-                    <li><a href="#" id="tab1">What is colorblindness?</a></li>
-                    <li><a href="#" id="tab2">Seeing colorblindness</a></li>
-                    <li><a href="#" id="tab3">What can I do?</a></li>
-                    <li><a href="#" id="tab4">Other Resources</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div id="tab-content">
-                <!-- Content for Tab 1 -->
-                <h1>Understanding Color Blindness</h1>
-
-                <p>Color blindness, also known as color vision deficiency (CVD), is a genetic condition that affects an individual's ability to perceive colors. Here are some key points about color blindness:</p>
-            
-                <h2>1. Prevalence:</h2>
-                <ul>
-                    <li>Color blindness affects approximately 1 in 12 men and 1 in 200 women worldwide.</li>
-                    <li>It's more common among individuals of Northern European descent.</li>
-                </ul>
-            
-                <h2>2. Types:</h2>
-                <ul>
-                    <li><strong>Red-Green Color Blindness:</strong> This is the most common form, where individuals have difficulty distinguishing between red and green hues.</li>
-                    <li><strong>Blue-Yellow Color Blindness:</strong> This is a rarer form, where individuals have trouble distinguishing between blue and yellow hues.</li>
-                    <li><strong>Total Color Blindness:</strong> A very rare form, where individuals see the world in shades of gray.</li>
-                </ul>
-            
-                <h2>3. Causes:</h2>
-                <ul>
-                    <li>The primary cause is genetic, passed down through families.</li>
-                    <li>Other causes can include certain eye conditions, aging, or exposure to harmful chemicals or radiation.</li>
-                </ul>
-            
-                <h2>4. Diagnosis:</h2>
-                <ul>
-                    <li>Color blindness is usually diagnosed using color vision tests such as the Ishihara Test.</li>
-                    <li>If you suspect you may be color blind, it's advisable to visit an eye care professional for a comprehensive examination.</li>
-                </ul>
-            
-                <h2>5. Living with Color Blindness:</h2>
-                <ul>
-                    <li>While there's no cure for genetic color blindness, corrective lenses or digital tools can help individuals perceive colors more accurately.</li>
-                    <li>Awareness and understanding from others can significantly improve the quality of life for those with color blindness.</li>
-                </ul>
+            <div class="container-fluid text-center">
+                <div class="row">
+                    <div class="col col-md-12">
+                        <h1>Welcome to Colorblindness Informational Website</h1>
+                    </div>
+                </div>
             </div>
-            
-                <!-- Content for Tab 2 -->
-                <div id="tab2-content">
-                    <h2>What colorblindness looks like</h2>
-                    <p>Possibly our own colorblindness test can go here, or just some of the classic colorblindess test images, i imagine lots of images in this section?</p>
-                </div>
-                <!-- Content for Tab 3 -->
-                <div id="tab3-content">
-                    <h2>So what?</h2>
-                    <p>This section can be about how they can raise awareness for colorblindness, and what they can do when desigining something to make it accessable for colorblind people</p>
-                </div>
-                <!-- Content for Tab 4 -->
-                <div id="tab4-content">
-                    <h2>Other great resources</h2>
-                    <p>Links to other resources, like a more official colorblindness test, or other resources we find along the way, along with where the info on our site comes from</p>
+        </header>
+
+        <main>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-10" id="tab1-content">
+                        <h2>Understanding Color Blindness</h2>
+
+                        <p>Color blindness, also known as color vision deficiency (CVD), is a genetic condition that
+                            affects an individual's ability to perceive colors. Here are some key points about color
+                            blindness:</p>
+                        <!-- Content for Tab 1 -->
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4 mb-1">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            1. Prevalence:
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="card-text list-group-item">Color blindness affects
+                                                    approximately 1 in 12 men and 1 in 200 women worldwide.</li>
+                                                <li class="card-text list-group-item">It's more common among individuals
+                                                    of Northern European descent.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 mb-1">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            2. Types:
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="card-text list-group-item"><strong>Red-Green Color
+                                                        Blindness:</strong> This is the most common form, where
+                                                    individuals have difficulty distinguishing between red and green
+                                                    hues.</li>
+                                                <li class="card-text list-group-item"><strong>Blue-Yellow Color
+                                                        Blindness:</strong> This is a rarer form, where individuals have
+                                                    trouble distinguishing between blue and yellow hues.</li>
+                                                <li class="card-text list-group-item"><strong>Total Color
+                                                        Blindness:</strong> A very rare form, where individuals see the
+                                                    world in shades of gray.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            3. Causes:
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="card-text list-group-item">The primary cause is genetic,
+                                                    passed down through families.</li>
+                                                <li class="card-text list-group-item">Other causes can include certain
+                                                    eye conditions, aging, or exposure to harmful chemicals or
+                                                    radiation.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            4. Diagnosis:
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="card-text list-group-item">Color blindness is usually
+                                                    diagnosed using color vision tests such as the Ishihara Test.</li>
+                                                <li class="card-text list-group-item">If you suspect you may be color
+                                                    blind, it's advisable to visit an eye care professional for a
+                                                    comprehensive examination.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            5. Living with Color Blindness:
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="card-text list-group-item">While there's no cure for genetic
+                                                    color blindness, corrective lenses or digital tools can help
+                                                    individuals perceive colors more accurately.</li>
+                                                <li class="card-text list-group-item">Awareness and understanding from
+                                                    others can significantly improve the quality of life for those with
+                                                    color blindness.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Content for Tab 2 -->
+                        <div id="tab2-content">
+                            <div class="container-fluid">
+                                <div class="row">
+
+                                    <div class="container">
+                                        <h2>What colorblindness looks like</h2>
+                                        <h4>Red-Green</h4>
+                                        <p>there are four types of red-green color blindlness</p>
+                                        <v class="list-group">
+                                            <p class="list-group-item">
+                                                <strong>Protanomaly:</strong> This causes red colors to look green due
+                                                to malfunctioning red cones.<br>
+                                            </p>
+                                            <p class="list-group-item">
+                                                <strong>Protanopia:</strong> This causes red colors to look green due to
+                                                nonfunctioning or missing red cones.<br>
+                                            </p>
+                                            <p class="list-group-item">
+                                                <strong>Deuteranomaly:</strong> This causes green colors to look red due
+                                                to malfunctioning green cones.<br>
+                                            </p>
+                                            <p class="list-group-item">
+                                                <strong>Deuteranopia:</strong> This causes green colors to look red due
+                                                to nonfunctioning or missing green cones.
+                                            </p>
+                                        </v>
+                                        <img class="img-fluid"
+                                            src="https://www.verywellhealth.com/thmb/Q7ZnR3usK-TJg269ZJmKOQujeBk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-825159548-53035963d4914ff8abe128f07908ea23.jpg"></img>
+                                        <h4>Blue-Yellow</h4>
+                                        <p>There are two types of blue-yellow color blindness:</p>
+                                        <v class="list-group">
+                                            <p class="list-group-item">
+                                                <strong>Tritanomaly:</strong> This makes it difficult to tell the
+                                                difference between blue and green and between yellow and red due to
+                                                malfunctioning blue and yellow cones.<br>
+                                            </p>
+                                            <p class="list-group-item">
+                                                <strong>Tritanopia:</strong> This makes it difficult to differentiate
+                                                between blue and green, purple and red, and yellow and pink due to
+                                                nonfunctioning or missing blue and yellow cones. It also makes colors
+                                                look less bright.
+                                            </p>
+                                        </v>
+                                        <img class="img-fluid"
+                                            src="https://www.verywellhealth.com/thmb/g7e62c4st5C8oqBPJs8dVrm0xpo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-825159610-f2b565ad93b842f6b82b3452a4aca181.jpg"></img>
+                                        <h4>Total Color Blindness</h4>
+                                        <p>Total color Blindness also called monochromacy, is the compleate inability to
+                                            distinguish colors. </p>
+                                        <img class="img-fluid"
+                                            src="https://www.d.umn.edu/~lcarlson/wcagwg/color/perception/images/achromatopsia.png"></img>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Content for Tab 3 -->
+                        <div id="tab3-content">
+                            <h2>What can I do?</h2>
+                            <p> A couple tips of how we can help as web developers</p>
+                            <p>1. Provide sufficient contrast using colors and textures</p>
+                            <p>2. Limit and prioritize color in the interface</p>
+                            <p>3. Allow manual font size adjustment</p>
+                            <p>4. Don’t rely on color alone to communicate important information</p>
+                            <p>6. Use explicit and descriptive labels for links and buttons</p>
+                        </div>
+                        <!-- Content for Tab 4 -->
+                        <div id="tab4-content">
+                            <h2>Other great resources</h2>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" href="">An item</li>
+                                <li class="list-group-item" href="">A second item</li>
+                                <li class="list-group-item" href="">A third item</li>
+                                <li class="list-group-item" href="">A fourth item</li>
+                                <li class="list-group-item" href="">And a fifth one</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 fixed">
+                        <!-- Navigation for tabs -->
+                        <div class="list-group p-0 page-nav" style="position: fixed;">
+                            <a href="#tab1-content"
+                                class="list-group-item list-group-item-action list-group-item-action active"
+                                aria-current="true">What is colorblindness?</a>
+                            <a href="#tab2-content" class="list-group-item list-group-item-action">Seeing
+                                colorblindness</a>
+                            <a href="#tab3-content" class="list-group-item list-group-item-action">What can I do?</a>
+                            <a href="#tab4-content" class="list-group-item list-group-item-action">Other Resources</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
-
-    </body>
+    </div>
+</body>
 
 </html>
 
