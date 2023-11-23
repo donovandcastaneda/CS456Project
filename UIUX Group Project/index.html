@@ -12,16 +12,59 @@
 
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <!-- boostrap for modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </head>
 
+<head>
+    <!-- Page-specific tags like title -->
+    <object type="text/html" data="headerContent.html"></object>
+  </head>
+  
 <nav id="navbar">
     <a href="index.html">Home</a>
     <a href="information.html">Information</a>
     <a href="quiz.html">Quiz</a>
     <a href="visuals.html">Visuals</a>
+    <button type="button" id="modal-btn-act" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Visual Options</button>
 </nav>
 
 <body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Page Visual Options</h1>
+            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Text Size</p>
+                <select id="textSize" class="form-select mb-2" aria-label="Default select example">
+                    <option selected value="0">Normal</option>
+                    <option value="1">Large</option>
+                    <option value="2">Small</option>
+                  </select>
+                
+                <p>Color</p>
+                <select id="pageColor" class="form-select" aria-label="Default select example">
+                    <option selected value="0">Normal</option>
+                    <option value="1">Gray</option>
+                    <option value="2">Red</option>
+                </select>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" id="visualOpts">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+  
     <div class="container-fluid">
         <header>
             <div class="container-fluid text-center">
@@ -48,7 +91,7 @@
                                 <div class="col-md-4 mb-1">
                                     <div class="card">
                                         <div class="card-header">
-                                            1. Prevalence:
+                                           <p> 1. Prevalence: </p>
                                         </div>
                                         <div class="card-body">
                                             <ul class="list-group list-group-flush">
@@ -63,7 +106,7 @@
                                 <div class="col-md-8 mb-1">
                                     <div class="card">
                                         <div class="card-header">
-                                            2. Types:
+                                            <p> 2. Types: </p>
                                         </div>
                                         <div class="card-body">
                                             <ul class="list-group list-group-flush">
@@ -84,7 +127,7 @@
                                 <div class="col-md-4">
                                     <div class="card">
                                         <div class="card-header">
-                                            3. Causes:
+                                            <p> 3. Causes: </p>
                                         </div>
                                         <div class="card-body">
                                             <ul class="list-group list-group-flush">
@@ -100,7 +143,7 @@
                                 <div class="col-md-4">
                                     <div class="card">
                                         <div class="card-header">
-                                            4. Diagnosis:
+                                            <p> 4. Diagnosis: </p>
                                         </div>
                                         <div class="card-body">
                                             <ul class="list-group list-group-flush">
@@ -116,7 +159,7 @@
                                 <div class="col-md-4">
                                     <div class="card">
                                         <div class="card-header">
-                                            5. Living with Color Blindness:
+                                            <p> 5. Living with Color Blindness: </p>
                                         </div>
                                         <div class="card-body">
                                             <ul class="list-group list-group-flush">
@@ -201,11 +244,11 @@
                         <div id="tab4-content">
                             <h2>Other great resources</h2>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item" href="">An item</li>
-                                <li class="list-group-item" href="">A second item</li>
-                                <li class="list-group-item" href="">A third item</li>
-                                <li class="list-group-item" href="">A fourth item</li>
-                                <li class="list-group-item" href="">And a fifth one</li>
+                                <a class="list-group-item" target="_blank" href="https://www.webmd.com/eye-health/color-blindness">what is color blindness?</a>
+                                <a class="list-group-item" target="_blank" href="https://www.colourblindawareness.org/">welcome to color blind Awareness</a>
+                                <a class="list-group-item" target="_blank" href="https://www.aao.org/eye-health/diseases/what-is-color-blindness">color blindness?</a>
+                                <a class="list-group-item" target="_blank" href="https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness#:~:text=What%20is%20color%20blindness%3F,vision%20deficiency%20runs%20in%20families.">color blindness</a>
+                                <a class="list-group-item" target="_blank" href="https://www.color-blindness.com/">Color Blindness - learn all about it</a>
                             </ul>
                         </div>
                     </div>
