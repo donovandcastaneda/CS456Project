@@ -14,6 +14,10 @@
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+    <!-- boostrap for modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    
     <title>Information</title>
 </head>
 
@@ -22,9 +26,42 @@
     <a href="information.html">Information</a>
     <a href="quiz.html">Quiz</a>
     <a href="visuals.html">Visuals</a>
+    <button type="button" id="modal-btn-act" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Visual Options</button>
 </nav>
 
 <body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Page Visual Options</h1>
+            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Text Size</p>
+                <select id="textSize" class="form-select mb-2" aria-label="Default select example">
+                    <option selected value="0">Normal</option>
+                    <option value="1">Large</option>
+                    <option value="2">Small</option>
+                    </select>
+                
+                <p>Color</p>
+                <select id="pageColor" class="form-select" aria-label="Default select example">
+                    <option selected value="0">Normal</option>
+                    <option value="1">Gray</option>
+                    <option value="2">Red</option>
+                </select>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" id="visualOpts">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
     <div class="container m-3">
         <div class="row">
             <div class="col-md-12">
@@ -134,3 +171,4 @@
 </body>
 
 </html>
+<script src="script.js"></script>
